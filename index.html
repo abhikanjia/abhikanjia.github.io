@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Responsive Page</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="logo">Web dev task 1</div>
+      <div class="hamburger" id="hamburger">&#9776;</div>
+      <nav id="navMenu">
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Features</a></li>
+          <li><a href="#">Pricing</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section class="hero">
+        <h1>Welcome to Our Home page</h1>
+        <p>Discover amazing features and start your journey with us today.</p>
+        <a href="#" class="cta-btn">Get Started</a>
+      </section>
+    </main>
+    <footer>
+      <div class="footer-content">
+        <span>© 2025 Web dev task 1</span>
+        <div class="social-links">
+          <a href="#" title="Twitter"
+            ><img
+              src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/twitter.svg"
+              alt="Twitter"
+          /></a>
+          <a href="#" title="Instagram"
+            ><img
+              src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/instagram.svg"
+              alt="Instagram"
+          /></a>
+          <a href="#" title="Facebook"
+            ><img
+              src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/facebook.svg"
+              alt="Facebook"
+          /></a>
+        </div>
+      </div>
+    </footer>
+    <!-- Add hamburger JS -->
+    <script>
+      const hamburger = document.getElementById("hamburger");
+      const navMenu = document.getElementById("navMenu");
+      hamburger.addEventListener("click", () => {
+        navMenu.classList.toggle("open");
+      });
+    </script>
+  </body>
+</html>
